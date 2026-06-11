@@ -1,26 +1,62 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* BASIC RESET */
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  color: #0f172a;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* SECTIONS */
+section {
+  padding: 80px 10%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* HEADINGS */
+h1, h2, h3 {
+  color: #0f172a;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* LINKS */
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* SCROLLBAR (clean apple style) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* BUTTON DEFAULT */
+button {
+  cursor: pointer;
+}
+
+/* CARD SHADOW */
+.card-shadow {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* REMOVE BLUR / BLANK ISSUE FIX */
+section {
+  opacity: 1 !important;
+  transform: none !important;
 }
