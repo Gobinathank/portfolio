@@ -33,10 +33,15 @@ This portfolio showcases my skills, projects, experience, and contact informatio
 
 ---
 ## 📁 Project Structure
-/app → Application routes (pages)
-/components → Reusable UI components
-/public → Static assets (images, icons)
-/styles → Global styles
+
+ -app → Application routes (pages)
+ 
+ -components → Reusable UI components
+ 
+ -public → Static assets (images, icons)
+ 
+ -styles → Global styles
+ 
 ---
 
 ## 🚀 Getting Started
