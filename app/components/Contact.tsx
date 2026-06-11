@@ -1,29 +1,54 @@
 export default function Contact() {
-  return (
-    <section id="contact" className="py-20 px-6 md:px-20 bg-gray-50">
+  type SocialLink = {
+    name: string;
+    url: string;
+  };
 
-      <h2 className="text-3xl font-bold text-center mb-10">
+  const socialLinks: SocialLink[] = [
+    {
+      name: "GitHub",
+      url: "https://github.com/Gobinathank",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/gobinathan-kandaswamy-60309724a/",
+    },
+  ];
+
+  return (
+    <section
+      id="contact"
+      className="py-24 px-6 md:px-20 bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white"
+    >
+      {/* Divider */}
+      <div className="w-24 h-1 bg-cyan-400 rounded-full mx-auto mb-10"></div>
+
+      <h2 className="text-4xl font-bold text-center mb-16">
         Contact
       </h2>
 
-      <div className="max-w-xl mx-auto text-center space-y-4">
+      <div className="max-w-xl mx-auto text-center space-y-6">
 
-        <p className="text-gray-600">
+        <p className="text-slate-400 text-lg">
           Let’s build something amazing together 🚀
         </p>
 
-        <p>
-          📧 <b>gopinathan1154@gmail.com</b>
+        <p className="text-lg">
+          📧 <span className="font-semibold text-white">gopinathan1154@gmail.com</span>
         </p>
 
-        <div className="flex justify-center gap-6 text-blue-600">
-          <a href="https://github.com/Gobinathank" target="_blank">
-            GitHub
-          </a>
-
-          <a href="https://www.linkedin.com/in/gobinathan-kandaswamy-60309724a/" target="_blank">
-            LinkedIn
-          </a>
+        <div className="flex justify-center gap-8 mt-6">
+          {socialLinks.map((link: SocialLink, index: number) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 font-semibold hover:text-cyan-300 transition-all duration-300 hover:scale-105"
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
 
       </div>

@@ -1,62 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* BASIC RESET */
-html, body {
-  padding: 0;
-  margin: 0;
-  background: #ffffff;
-  color: #0f172a;
+/* Smooth scrolling */
+html {
   scroll-behavior: smooth;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
-/* SECTIONS */
-section {
-  padding: 80px 10%;
-}
-
-/* HEADINGS */
-h1, h2, h3 {
-  color: #0f172a;
-}
-
-/* LINKS */
-a {
-  transition: 0.2s;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-/* SCROLLBAR (clean apple style) */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* BUTTON DEFAULT */
-button {
-  cursor: pointer;
-}
-
-/* CARD SHADOW */
-.card-shadow {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* REMOVE BLUR / BLANK ISSUE FIX */
-section {
-  opacity: 1 !important;
-  transform: none !important;
+body {
+  margin: 0;
+  padding: 0;
 }
