@@ -33,26 +33,10 @@ This portfolio showcases my skills, projects, experience, and contact informatio
 
 ---
 ## 📁 Project Structure
-Portfolio/
-|app
-├───components
-|      Hero.tsx 
-|      About.tsx
-|      Skills.tsx
-|      ProjectsSlider.tsx
-|      Experience.tsx 
-|      Services.tsx 
-|      Contact.tsx
-|      Footer.tsx
-|      Navbar.tsx
-|      TechStack.tsx
-|
-├───globals.css
-├───page.tsx
-├───layout.tsx
-|public
-├───resume.pdf
-      
+/app → Application routes (pages)
+/components → Reusable UI components
+/public → Static assets (images, icons)
+/styles → Global styles
 ---
 
 ## 🚀 Getting Started
