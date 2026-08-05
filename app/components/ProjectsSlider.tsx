@@ -4,11 +4,11 @@ import { useRef, useState } from "react";
 
 const projects = [
   {
-    title: "JSR Job Status Management System",
+    title: "Workflow Management System",
     tech: "Google Sheets • KPI Monitoring • Workflow Automation",
-    desc: "Built a complete job tracking system with status monitoring, overdue tracking, dashboards and KPI reporting.",
+    desc: "Built a complete workflow management system with status monitoring, overdue tracking, dashboards and KPI reporting.",
     img: "/projects/jsr.png",
-    github: "#",
+    github: "https://github.com/Gobinathank/workflow-management-system",
     featured: true
   },
   {
